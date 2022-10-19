@@ -105,7 +105,7 @@ setInterval(()=>{
 
 // RUTAS RELATIVAS: trabajo con un archivo JSON de forma local (ver diapo 65 de la clase 15 de coder)
 const listado = document.getElementById("listado");
-const listadoProductos = "json/producto.json";
+const listadoProductos = "json/productos.json";
 
 fetch(listadoProductos)
     .then (respuesta => respuesta.json())
