@@ -111,7 +111,7 @@ fetch(listadoProductos)
     .then (respuesta => respuesta.json())
     .then (datos => {
         datos.forEach(producto => {
-            listado.innerHTML = `
+            listado.innerHTML += `
             <h3>Nombre: ${producto.nombre}</h3>
             <strong>Precio: ${producto.precio}</strong>
             <strong>ID: ${producto.id}</strong>
